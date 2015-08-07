@@ -1,0 +1,430 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		09C8E0B8465E7EA6539CFB78DB8631C6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 041AB620F213CBEB25DCF4CEA7B4E4AD /* Foundation.framework */; };
+		5436646DADB6FFDB833B901AA7A198C7 /* JRSwizzle-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9714FF6893538B00D0C85CF4DE62F875 /* JRSwizzle-dummy.m */; };
+		5E41F4D051328F1BD0F0A2A7AD66B918 /* JRSwizzle.h in Headers */ = {isa = PBXBuildFile; fileRef = 8F54293008C6DF48A1A68CB8D9447744 /* JRSwizzle.h */; };
+		80178D398F79BCDAB8678ADC96B5E004 /* JRSwizzle.m in Sources */ = {isa = PBXBuildFile; fileRef = B285371854B442FBD31FE29E2F8B54EF /* JRSwizzle.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		8CD1768CCDB20737EB767CF00CB638F0 /* Pods-MCPopupOverlay-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B40DDEBF91465150458956708D225FE0 /* Pods-MCPopupOverlay-dummy.m */; };
+		B74D977A2246B092AA9CE0EF494ECE7D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 041AB620F213CBEB25DCF4CEA7B4E4AD /* Foundation.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		7EC5920633FE558348F929A612269992 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 29E3C3F9AC0936DC01C6228FFAFC95A7;
+			remoteInfo = JRSwizzle;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		041AB620F213CBEB25DCF4CEA7B4E4AD /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		0B0FC28C02315916558F8AEC11D0220D /* libPods-MCPopupOverlay.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MCPopupOverlay.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		32A3D9264C11900F511AC338B7E728CE /* Pods-MCPopupOverlay-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-MCPopupOverlay-acknowledgements.markdown"; sourceTree = "<group>"; };
+		3569A1E6BAE6D23DC099A24FD97FB22A /* Pods-MCPopupOverlay-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-MCPopupOverlay-resources.sh"; sourceTree = "<group>"; };
+		4BB0C3C5880315B05D5EA724A1323551 /* JRSwizzle.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = JRSwizzle.xcconfig; sourceTree = "<group>"; };
+		61DB22589D6EED310E6DBD37B17B6F34 /* JRSwizzle-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "JRSwizzle-prefix.pch"; sourceTree = "<group>"; };
+		806A6C701E859E46462E1BB42DA62B56 /* Pods-MCPopupOverlay.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MCPopupOverlay.debug.xcconfig"; sourceTree = "<group>"; };
+		8795A3C9B8680573F7003BE2357A223D /* Pods-MCPopupOverlay-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MCPopupOverlay-acknowledgements.plist"; sourceTree = "<group>"; };
+		8F54293008C6DF48A1A68CB8D9447744 /* JRSwizzle.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = JRSwizzle.h; sourceTree = "<group>"; };
+		9714FF6893538B00D0C85CF4DE62F875 /* JRSwizzle-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "JRSwizzle-dummy.m"; sourceTree = "<group>"; };
+		B285371854B442FBD31FE29E2F8B54EF /* JRSwizzle.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = JRSwizzle.m; sourceTree = "<group>"; };
+		B40DDEBF91465150458956708D225FE0 /* Pods-MCPopupOverlay-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-MCPopupOverlay-dummy.m"; sourceTree = "<group>"; };
+		BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		E1499CE10CAD8EA84A2CA07EF15A966D /* Pods-MCPopupOverlay.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MCPopupOverlay.release.xcconfig"; sourceTree = "<group>"; };
+		EF9B2CD152C01C3523298586E461ED15 /* libJRSwizzle.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libJRSwizzle.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		F19DA5ADB1F2A44C03F8576935F2FD26 /* JRSwizzle-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "JRSwizzle-Private.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4B5F15E6CEBDE03821F1740DED0526EE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				09C8E0B8465E7EA6539CFB78DB8631C6 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E00149B264C5D7C7C304B53BA62C5095 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B74D977A2246B092AA9CE0EF494ECE7D /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3DD5F5ED835D6FC661A5A98D5CFCDCFA /* JRSwizzle */ = {
+			isa = PBXGroup;
+			children = (
+				8F54293008C6DF48A1A68CB8D9447744 /* JRSwizzle.h */,
+				B285371854B442FBD31FE29E2F8B54EF /* JRSwizzle.m */,
+				8A69F4973C60D3C83A57EA8EB543F259 /* Support Files */,
+			);
+			path = JRSwizzle;
+			sourceTree = "<group>";
+		};
+		53F661C0CA7190D2CF05023FB33D61E4 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				041AB620F213CBEB25DCF4CEA7B4E4AD /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		745F1C572426B9F80AE1C265EA400C0E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3DD5F5ED835D6FC661A5A98D5CFCDCFA /* JRSwizzle */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */,
+				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
+				745F1C572426B9F80AE1C265EA400C0E /* Pods */,
+				CCA510CFBEA2D207524CDA0D73C3B561 /* Products */,
+				C32FF5CB77BBCC4B65F8B4AF57543646 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		8A69F4973C60D3C83A57EA8EB543F259 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				4BB0C3C5880315B05D5EA724A1323551 /* JRSwizzle.xcconfig */,
+				F19DA5ADB1F2A44C03F8576935F2FD26 /* JRSwizzle-Private.xcconfig */,
+				9714FF6893538B00D0C85CF4DE62F875 /* JRSwizzle-dummy.m */,
+				61DB22589D6EED310E6DBD37B17B6F34 /* JRSwizzle-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/JRSwizzle";
+			sourceTree = "<group>";
+		};
+		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				53F661C0CA7190D2CF05023FB33D61E4 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C32FF5CB77BBCC4B65F8B4AF57543646 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				CD295A9BE6B4C54A79E0E6FC22825064 /* Pods-MCPopupOverlay */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		CCA510CFBEA2D207524CDA0D73C3B561 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EF9B2CD152C01C3523298586E461ED15 /* libJRSwizzle.a */,
+				0B0FC28C02315916558F8AEC11D0220D /* libPods-MCPopupOverlay.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CD295A9BE6B4C54A79E0E6FC22825064 /* Pods-MCPopupOverlay */ = {
+			isa = PBXGroup;
+			children = (
+				32A3D9264C11900F511AC338B7E728CE /* Pods-MCPopupOverlay-acknowledgements.markdown */,
+				8795A3C9B8680573F7003BE2357A223D /* Pods-MCPopupOverlay-acknowledgements.plist */,
+				B40DDEBF91465150458956708D225FE0 /* Pods-MCPopupOverlay-dummy.m */,
+				3569A1E6BAE6D23DC099A24FD97FB22A /* Pods-MCPopupOverlay-resources.sh */,
+				806A6C701E859E46462E1BB42DA62B56 /* Pods-MCPopupOverlay.debug.xcconfig */,
+				E1499CE10CAD8EA84A2CA07EF15A966D /* Pods-MCPopupOverlay.release.xcconfig */,
+			);
+			name = "Pods-MCPopupOverlay";
+			path = "Target Support Files/Pods-MCPopupOverlay";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		EB4407A1E3950E963D39AEE71177E287 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5E41F4D051328F1BD0F0A2A7AD66B918 /* JRSwizzle.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		29E3C3F9AC0936DC01C6228FFAFC95A7 /* JRSwizzle */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DBB4CEB8ADB1221286C9808F7031C086 /* Build configuration list for PBXNativeTarget "JRSwizzle" */;
+			buildPhases = (
+				979B27AF463E569F4C191656B73147EC /* Sources */,
+				E00149B264C5D7C7C304B53BA62C5095 /* Frameworks */,
+				EB4407A1E3950E963D39AEE71177E287 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = JRSwizzle;
+			productName = JRSwizzle;
+			productReference = EF9B2CD152C01C3523298586E461ED15 /* libJRSwizzle.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		C2BD20242845145A3B3E6F4E605F90AA /* Pods-MCPopupOverlay */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B389D21312F13DE9B6199F4709FA8A6A /* Build configuration list for PBXNativeTarget "Pods-MCPopupOverlay" */;
+			buildPhases = (
+				8C7457B65B259CFEFEB2145AB187520A /* Sources */,
+				4B5F15E6CEBDE03821F1740DED0526EE /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				079D1113D2E23201E35B5DC126316B4E /* PBXTargetDependency */,
+			);
+			name = "Pods-MCPopupOverlay";
+			productName = "Pods-MCPopupOverlay";
+			productReference = 0B0FC28C02315916558F8AEC11D0220D /* libPods-MCPopupOverlay.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0700;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = CCA510CFBEA2D207524CDA0D73C3B561 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				29E3C3F9AC0936DC01C6228FFAFC95A7 /* JRSwizzle */,
+				C2BD20242845145A3B3E6F4E605F90AA /* Pods-MCPopupOverlay */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8C7457B65B259CFEFEB2145AB187520A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8CD1768CCDB20737EB767CF00CB638F0 /* Pods-MCPopupOverlay-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		979B27AF463E569F4C191656B73147EC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5436646DADB6FFDB833B901AA7A198C7 /* JRSwizzle-dummy.m in Sources */,
+				80178D398F79BCDAB8678ADC96B5E004 /* JRSwizzle.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		079D1113D2E23201E35B5DC126316B4E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = JRSwizzle;
+			target = 29E3C3F9AC0936DC01C6228FFAFC95A7 /* JRSwizzle */;
+			targetProxy = 7EC5920633FE558348F929A612269992 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		4B01D85294CFA0FC7C0DCC531F3DBF06 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E1499CE10CAD8EA84A2CA07EF15A966D /* Pods-MCPopupOverlay.release.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		4DAFCEFC1BAFE1D057245F3925ECCC41 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F19DA5ADB1F2A44C03F8576935F2FD26 /* JRSwizzle-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/JRSwizzle/JRSwizzle-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		6569F07DC21AD8B72752685013E3D9D8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				ONLY_ACTIVE_ARCH = YES;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		7D75A46B58EEB70351DCFEA8536A342A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 806A6C701E859E46462E1BB42DA62B56 /* Pods-MCPopupOverlay.debug.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		836E0D4D6BDE6568C56EA342F50BA78E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F19DA5ADB1F2A44C03F8576935F2FD26 /* JRSwizzle-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/JRSwizzle/JRSwizzle-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		A14E2444F162A20E3776820E0ADFFB52 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = "RELEASE=1";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6569F07DC21AD8B72752685013E3D9D8 /* Debug */,
+				A14E2444F162A20E3776820E0ADFFB52 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B389D21312F13DE9B6199F4709FA8A6A /* Build configuration list for PBXNativeTarget "Pods-MCPopupOverlay" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7D75A46B58EEB70351DCFEA8536A342A /* Debug */,
+				4B01D85294CFA0FC7C0DCC531F3DBF06 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DBB4CEB8ADB1221286C9808F7031C086 /* Build configuration list for PBXNativeTarget "JRSwizzle" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4DAFCEFC1BAFE1D057245F3925ECCC41 /* Debug */,
+				836E0D4D6BDE6568C56EA342F50BA78E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}

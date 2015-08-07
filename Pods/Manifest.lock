@@ -1,0 +1,10 @@
+PODS:
+  - JRSwizzle (1.0)
+
+DEPENDENCIES:
+  - JRSwizzle (~> 1.0)
+
+SPEC CHECKSUMS:
+  JRSwizzle: dd5ead5d913a0f29e7f558200165849f006bb1e3
+
+COCOAPODS: 0.38.2
