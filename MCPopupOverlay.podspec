@@ -2,7 +2,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "MCPopupOverlay"
-  s.version      = "0.0.1"
+  s.version      = "0.0.2"
   s.summary      = "A generic popup view class."
   s.homepage     = "http://www.mushroomcloud.co.za"
   s.license      = 'Apache License, Version 2.0'
@@ -10,7 +10,7 @@ Pod::Spec.new do |s|
 
   s.platform     = :ios, "6.0"
 
-  s.source       = { :git => "https://github.com/MushroomCloud/MCPopupOverlay.git", :tag => "0.0.1" }
+  s.source       = { :git => "https://github.com/MushroomCloud/MCPopupOverlay.git", :tag => "0.0.2" }
   s.source_files = "MCPopupOverlay/*.{h,m}", "MCPopupOverlay/**/*.{h,m}"
   s.public_header_files = "MCPopupOverlay/*.h", "MCPopupOverlay/Framework/*.h"
 
