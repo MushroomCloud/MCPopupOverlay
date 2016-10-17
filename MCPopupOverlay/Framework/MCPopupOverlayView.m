@@ -42,6 +42,7 @@ static const CGFloat kAnimationDuration = 0.2f;
 - (void)setupPanToDismissLabel;
 
 - (void)adjustContentOffsetForFirstResponder;
+- (void)adjustContentOffsetForView:(UIView *)view;
 
 - (void)keyboardFrameChanged:(NSNotification *)notification;
 - (void)firstResponderDidChange:(NSNotification *)notification;
@@ -305,18 +306,25 @@ static const CGFloat kAnimationDuration = 0.2f;
 
 - (void)adjustContentOffsetForFirstResponder
 {
-    if ([self.previousFirstResponder isFirstResponder])
+    UIView *previousFirstResponder = self.previousFirstResponder;
+    if ([previousFirstResponder isFirstResponder])
     {
-        const CGFloat inset = 10.0;
-        CGRect responderFrame = [self convertRect:self.previousFirstResponder.frame fromView:self.previousFirstResponder.superview];
-        responderFrame.origin.y += inset;
-        if (CGRectGetMaxY(responderFrame) > CGRectGetMinY(self.keyboardIntersectionFrame))
+        [self adjustContentOffsetForView:previousFirstResponder];
+    }
+}
+
+- (void)adjustContentOffsetForView:(UIView *)view
+{
+    const CGFloat inset = 10.0;
+    CGRect viewFrame = [self convertRect:view.frame fromView:view.superview];
+    viewFrame.origin.y += inset;
+    if (CGRectGetMaxY(viewFrame) > CGRectGetMinY(self.keyboardIntersectionFrame))
+    {
+        CGFloat offset = CGRectGetMaxY(viewFrame) - (self.popupContainerView.bounds.size.height - self.keyboardIntersectionFrame.size.height);
+        [UIView animateWithDuration:0.3 animations:^
         {
-            [UIView animateWithDuration:0.3 animations:^
-            {
-                [self.popupContainerView setContentOffset:CGPointMake(0.0, self.popupContainerView.contentSize.height - CGRectGetMaxY(responderFrame))];
-            }];
-        }
+            [self.popupContainerView setContentOffset:CGPointMake(0.0, offset)];
+        }];
     }
 }
 
@@ -347,11 +355,17 @@ static const CGFloat kAnimationDuration = 0.2f;
     
     [UIView commitAnimations];
     
+    BOOL keyboardWasUp = self.keyboardIsUp;
     self.keyboardIntersectionFrame = intersectionFrame;
     self.keyboardIsUp = intersectionFrame.size.height > 0.0;
     self.dismissGestureController.gestureRecognizer.enabled = (self.panToDismissEnabled && !self.keyboardIsUp);
     
-    if (self.keyboardIsUp && self.previousFirstResponder != nil)
+    if (self.keyboardIsUp && !keyboardWasUp &&
+        self.popupView.bounds.size.height < (CGRectGetHeight(self.bounds) - intersectionFrame.size.height))
+    {
+        [self adjustContentOffsetForView:self.popupView];
+    }
+    else if (self.keyboardIsUp && self.previousFirstResponder != nil)
     {
         [self adjustContentOffsetForFirstResponder];
     }
