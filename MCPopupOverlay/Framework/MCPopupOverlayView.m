@@ -339,7 +339,7 @@ static const CGFloat kAnimationDuration = 0.2f;
     [UIView setAnimationCurve:animationCurve];
     
     CGRect frame = self.frame;
-    CGRect keyboardFrame = [self convertRect:keyboardEndFrame toView:self];
+    CGRect keyboardFrame = [self.window convertRect:keyboardEndFrame toView:self];
     CGRect intersectionFrame = CGRectIntersection(frame, keyboardFrame);
     
     self.popupContainerView.contentInset = UIEdgeInsetsMake(0.0, 0.0, intersectionFrame.size.height + self.keyboardPadding, 0.0);
